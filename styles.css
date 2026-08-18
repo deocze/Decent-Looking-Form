@@ -10,15 +10,14 @@ html, body {
     src: url(Fonts/Hibur_Mono\,Montenegrin_Gothic_One\,Playwrite_ID.zip) format(ttf);
 }
 body{
-    /* background-image: url(Images/TheImage.jpg);
+    background-image: url(Images/Flower.jpg);
     background-repeat: no-repeat;
-    background-size: auto 110%;
-    background-position: left -400px center; */
+    background-size: auto 100%;
+    background-position: left -360px center;
     display: flex;
     justify-content: center;
 }
 .imageLabel{
-    background-color: yellow;   
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -27,11 +26,9 @@ body{
 }
 .formContainer{
     background-color: cadetblue;
-    width: 900px;
     flex: 1 1 40%;
 }
 .label{
-    background-color: black;
     width: 100%;
     height: auto;
     flex: 1;
