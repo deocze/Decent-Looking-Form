@@ -10,10 +10,10 @@ html, body {
     src: url(Fonts/Hibur_Mono\,Montenegrin_Gothic_One\,Playwrite_ID.zip) format(ttf);
 }
 body{
-    background-image: url(Images/Flower.jpg);
+    background-image: url(Images/FlowerQuality.jpeg);
     background-repeat: no-repeat;
     background-size: auto 100%;
-    background-position: left -360px center;
+    background-position: left  center;
     display: flex;
     justify-content: center;
 }
@@ -28,8 +28,9 @@ body{
     background-color: cadetblue;
     flex: 1 1 40%;
 }
-.label{
+/* .imageLabel:nth-child(1){
+    background-color: #f8f8f8;
     width: 100%;
     height: auto;
     flex: 1;
-}
+} */
