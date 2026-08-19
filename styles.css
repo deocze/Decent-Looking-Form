@@ -6,8 +6,8 @@ html, body {
 }
 
 @font-face{
-    font-family: Raleway;
-    src: url(Fonts/Hibur_Mono\,Montenegrin_Gothic_One\,Playwrite_ID.zip) format(ttf);
+    font-family: mangat;
+    src: url(Fonts/manga_temple/mangat.ttf), format(ttf);
 }
 body{ 
     display: flex;
@@ -15,21 +15,27 @@ body{
 }
 .imageLabel{
     flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    position: relative;
 }
 .formContainer{
     background-color: cadetblue;
     flex: 1 1 40%;
 }
-img{
-
-}
-/* .imageLabel:nth-child(1){
-    background-color: #f8f8f8;
+.label{
+    position: absolute;
+    bottom: 60%;
     width: 100%;
-    height: auto;
-    flex: 1;
-} */
+    height: 140px;
+    background-color: #f8f8f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 80%;
+    color: rgb(169, 84, 120);
+}
+
+.formLabel{
+    font-size: 30px;
+    font-style: italic;
+    font-family: mangat;
+}
