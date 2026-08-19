@@ -9,11 +9,7 @@ html, body {
     font-family: Raleway;
     src: url(Fonts/Hibur_Mono\,Montenegrin_Gothic_One\,Playwrite_ID.zip) format(ttf);
 }
-body{
-    background-image: url(Images/FlowerQuality.jpeg);
-    background-repeat: no-repeat;
-    background-size: auto 100%;
-    background-position: left  center;
+body{ 
     display: flex;
     justify-content: center;
 }
@@ -27,6 +23,9 @@ body{
 .formContainer{
     background-color: cadetblue;
     flex: 1 1 40%;
+}
+img{
+
 }
 /* .imageLabel:nth-child(1){
     background-color: #f8f8f8;
