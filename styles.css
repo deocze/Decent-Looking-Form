@@ -57,13 +57,15 @@ body{
     font-family: Quicksand;
 }
 .inputArea span{
+    text-align: center;
+}
+.inputArea span{
     font-weight: 700; 
     font-size: 40px;
 }
 .inputArea form{
     margin-top: 40px;
     display: flex;
-    justify-content: center;
     align-items: center;
 }
 .inputArea form input{
@@ -73,7 +75,14 @@ body{
     display: block;
     margin-top: 12px;
     margin-bottom: 12px;
+    font-size: 130%;
 }
 .inputArea form label{
     margin-bottom: 200px;
+}
+#squidword,#frame{
+    position: absolute;
+    height: 264px;
+    width: 200px;
+    top: 39%;
 }
