@@ -60,3 +60,20 @@ body{
     font-weight: 700; 
     font-size: 40px;
 }
+.inputArea form{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inputArea form input{
+    width: 400px;
+    height: 40px;
+    margin-right: 60px;
+    display: block;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+.inputArea form label{
+    margin-bottom: 200px;
+}
