@@ -15,29 +15,37 @@
     </div>    
     <div class="formContainer">
         <div class="inputArea">
-            <span>Sign-Up Form</span>
+
             <form action="" method="post">
-                <div>    
-                    <label for="fnameField">FIRST NAME</label>
-                    <input id="fnameField" type="text">
-                    <label for="emailField">EMAIL</label>
-                    <input id="emailField" type="email">
-                    <label for="passwordField">PASSWORD</label>
-                    <input id="passwordField" type="password"> 
+                <span id="signUp">Sign-Up Form</span>                
+                <div id="inputFields">
+                    <div>    
+                        <label for="fnameField">FIRST NAME</label>
+                        <input id="fnameField" type="text">
+                        <label for="emailField">EMAIL</label>
+                        <input id="emailField" type="email">
+                        <label for="passwordField">PASSWORD</label>
+                        <input id="passwordField" type="password">                    
+                    </div>
+                    <div>
+                        <label for="lnameField">LAST NAME</label>
+                        <input id="lnameField" type="text">
+                        <label for="phoneField">PHONE NUMBER</label>
+                        <input id="phoneField" type="text"> 
+                        <label for="passwordConfirmField">CONFIRM PASSWORD</label>
+                        <input id="passwordConfirmField" type="password">                                                             
+                    </div>
+                    <div>
+                        <img src="Images/WorkOfArt.jpeg" id ="squidword">
+                        <img src="Images/Frame.png" id ="frame">
+                    </div>
                 </div>
-                <div>
-                    <label for="lnameField">LAST NAME</label>
-                    <input id="lnameField" type="text">
-                    <label for="phoneField">PHONE NUMBER</label>
-                    <input id="phoneField" type="text"> 
-                    <label for="passwordConfirmField">CONFIRM PASSWORD</label>
-                    <input id="passwordConfirmField" type="password">                                                             
-                </div>
-                <div>
-                    <img src="Images/WorkOfArt.jpeg" id ="squidword">
-                    <img src="Images/Frame.png" id ="frame">
-                </div>
-            </form>            
+                <div class="submitDiv">
+                    <button type="submit" id="submitButton">Create Account</button>
+                    <span id="logIn">Already have an account? <a href="example.com">Log in</a></span>                        
+                </div>                 
+            </form>
+
         </div>
     </div>
 

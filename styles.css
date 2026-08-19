@@ -26,7 +26,8 @@ body{
     flex: 1 1 35%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    flex-direction: column;
 }
 .label{
     position: absolute;
@@ -56,17 +57,21 @@ body{
     padding-top: 10px;
     font-family: Quicksand;
 }
-.inputArea span{
+#signUp{
     text-align: center;
 }
-.inputArea span{
+#signUp{
     font-weight: 700; 
     font-size: 40px;
 }
-.inputArea form{
+#inputFields{
     margin-top: 40px;
     display: flex;
     align-items: center;
+    flex-direction: row;
+}
+#inputFields label{
+    margin-bottom: 200px;
 }
 .inputArea form input{
     width: 400px;
@@ -77,12 +82,29 @@ body{
     margin-bottom: 12px;
     font-size: 130%;
 }
-.inputArea form label{
-    margin-bottom: 200px;
-}
 #squidword,#frame{
     position: absolute;
     height: 264px;
     width: 200px;
     top: 39%;
+}
+.submitDiv{
+    position: relative;
+    top: 60px;
+}
+#submitButton{
+    background-color: #fec76f;
+    color:#43a870d2;    
+    border-color: #fec76f;    
+    padding: 15px 60px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    font-family: Quicksand;
+    font-size: 27px;
+    font-weight: 900;  
+
+}
+#logIn{
+    display: block;
+    font-family: Quicksand;
 }
