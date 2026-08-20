@@ -1,9 +1,10 @@
 html, body {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-  background-color: antiquewhite;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: antiquewhite;
+    overflow: hidden;  
 }
 
 @font-face{
@@ -49,7 +50,7 @@ body{
 }
 
 .inputArea{
-    height: 40%;
+    height: 378px;
     width: 100%;
     background-color: white;
     box-shadow: 10px 10px 45px grey;
@@ -67,11 +68,7 @@ body{
 #inputFields{
     margin-top: 40px;
     display: flex;
-    align-items: center;
     flex-direction: row;
-}
-#inputFields label{
-    margin-bottom: 200px;
 }
 .inputArea form input{
     width: 400px;
