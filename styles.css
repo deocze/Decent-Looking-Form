@@ -1,113 +1,125 @@
-html, body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    background-color: antiquewhite;
-    overflow: hidden;  
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background-color: antiquewhite;
+  overflow: hidden;
 }
 
-@font-face{
-    font-family: Raleway;
-    src: url(Fonts/MainVariant/Raleway/Raleway-Italic-VariableFont_wght.ttf), format(ttf);
+@font-face {
+  font-family: Raleway;
+  src:
+    url(Fonts/MainVariant/Raleway/Raleway-Italic-VariableFont_wght.ttf),
+    format(ttf);
 }
-@font-face{
-    font-family: Quicksand;
-    src: url("Fonts/quicksand/Quicksand-Regular.otf"), format(otf);
+@font-face {
+  font-family: Quicksand;
+  src: url("Fonts/quicksand/Quicksand-Regular.otf"), format(otf);
 }
-body{ 
-    display: flex;
-    justify-content: center;
+body {
+  display: flex;
+  justify-content: center;
 }
-.imageContainer{
-    flex: 1;
-    position: relative;
+.imageContainer {
+  flex: 1;
+  position: relative;
 }
-.formContainer{
-    flex: 1 1 35%;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: column;
+.formContainer {
+  flex: 1 1 35%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
 }
-.label{
-    position: absolute;
-    bottom: 65%;
-    width: 100%;
-    height: 130px;
-    background-color: rgba(0, 0, 0, 0.358);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: 65%;
-    color: white
-}
-
-.formLabel{
-    font-size: 65px;
-    font-style: italic;
-    font-family: Raleway;
+.label {
+  position: absolute;
+  bottom: 65%;
+  width: 100%;
+  height: 130px;
+  background-color: rgba(0, 0, 0, 0.358);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 65%;
+  color: white;
 }
 
-.inputArea{
-    height: 378px;
-    width: 100%;
-    background-color: white;
-    box-shadow: 10px 10px 45px grey;
-    padding-left: 20px;
-    padding-top: 10px;
-    font-family: Quicksand;
+.formLabel {
+  font-size: 65px;
+  font-style: italic;
+  font-family: Raleway;
 }
-#signUp{
-    text-align: center;
-}
-#signUp{
-    font-weight: 700; 
-    font-size: 40px;
-}
-#inputFields{
-    margin-top: 40px;
-    display: flex;
-    flex-direction: column;
-}
-.inputArea form input{
-    width: 400px;
-    height: 40px;
-    margin-right: 60px;
-    margin-top: 12px;
-    margin-bottom: 12px;
-    font-size: 130%;
-}
-.controlDiv{
-    width: 500px;
-}
-.seperatingDiv{
-    display: flex;
-}
-#squidword,#frame{
-    position: absolute;
-    height: 264px;
-    width: 200px;
-    top: 39%;
-    right: 90px;
-}
-.submitDiv{
-    position: relative;
-    top: 60px;
-}
-#submitButton{
-    background-color: #fec76f;
-    color:#43a870d2;    
-    border-color: #fec76f;    
-    padding: 15px 60px;
-    margin-bottom: 30px;
-    border-radius: 10px;
-    font-family: Quicksand;
-    font-size: 27px;
-    font-weight: 900;  
 
+.inputArea {
+  height: 378px;
+  width: 100%;
+  background-color: white;
+  box-shadow: 10px 10px 45px grey;
+  padding-left: 20px;
+  padding-top: 10px;
+  font-family: Quicksand;
 }
-#logIn{
-    display: block;
-    font-family: Quicksand;
+#signUp {
+  text-align: center;
+}
+#signUp {
+  font-weight: 700;
+  font-size: 40px;
+}
+#inputFields {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+}
+.inputArea form input {
+  width: 400px;
+  height: 40px;
+  margin-right: 60px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  font-size: 130%;
+  border-style: solid;
+}
+#password,
+#passwordConfirmed:valid {
+  border-color: #43a870d2;
+}
+#password,
+#passwordConfirmed:invalid {
+  border-color: red;
+}
+.controlDiv {
+  width: 500px;
+}
+.seperatingDiv {
+  display: flex;
+}
+#squidword,
+#frame {
+  position: absolute;
+  height: 264px;
+  width: 200px;
+  top: 39%;
+  right: 90px;
+}
+.submitDiv {
+  position: relative;
+  top: 60px;
+}
+#submitButton {
+  background-color: #fec76f;
+  color: #43a870d2;
+  border-color: #fec76f;
+  padding: 15px 60px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  font-family: Quicksand;
+  font-size: 27px;
+  font-weight: 900;
+}
+#logIn {
+  display: block;
+  font-family: Quicksand;
 }

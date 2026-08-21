@@ -1,67 +1,98 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Art</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="ArtJavaScript.js"></script>
+  </head>
+  <body>
     <div class="imageContainer">
-        <img src="Images/ArtLogoFinal.jpg" alt="High quality image of flowers in a field" width="100%" height="100%">
-        <div class="label">
-            <span class="formLabel">Art Gallery</span>            
-        </div>
-    </div>    
-    <div class="formContainer">
-        <div class="inputArea">
-
-            <form action="" method="post">
-                <span id="signUp">Sign-Up Form</span>                
-                <div id="inputFields">
-                    <div class="seperatingDiv">    
-                        <div class="controlDiv">
-                            <label for="fnameField">FIRST NAME</label>
-                            <input id="fnameField" type="text">
-                        </div>
-                        <div class="controlDiv">
-                            <label for="lnameField">LAST NAME</label>
-                            <input id="lnameField" type="text">  
-                        </div>                                        
-                    </div>
-                    <div class="seperatingDiv">
-                        <div class="controlDiv">
-                            <label for="emailField">EMAIL</label>
-                            <input id="emailField" type="email">
-                        </div>
-                        <div class="controlDiv">
-                            <label for="phoneField">PHONE NUMBER</label>
-                            <input id="phoneField" type="text">       
-                        </div>                                              
-                    </div>
-                    <div class="seperatingDiv">
-                        <div class="controlDiv">
-                            <label for="passwordField">PASSWORD</label>
-                            <input id="passwordField" type="password">
-                        </div>                          
-                        <div class="controlDiv">
-                            <label for="passwordConfirmField">CONFIRM PASSWORD</label>
-                            <input id="passwordConfirmField" type="password">                                                             
-                        </div>
-                    </div>
-                    <div class="imageDiv">
-                        <img src="Images/WorkOfArt.jpeg" id ="squidword">
-                        <img src="Images/Frame.png" id ="frame">
-                    </div>
-                </div>
-                <div class="submitDiv">
-                    <button type="submit" id="submitButton">Create Account</button>
-                    <span id="logIn">Already have an account? <a href="example.com">Log in</a></span>                        
-                </div>                 
-            </form>
-
-        </div>
+      <img
+        src="Images/ArtLogoFinal.jpg"
+        alt="High quality image of flowers in a field"
+        width="100%"
+        height="100%"
+      />
+      <div class="label">
+        <span class="formLabel">Art Gallery</span>
+      </div>
     </div>
-
-</body>
+    <div class="formContainer">
+      <div class="inputArea">
+        <form action="" method="post">
+          <span id="signUp">Sign-Up Form</span>
+          <div id="inputFields">
+            <div class="seperatingDiv">
+              <div class="controlDiv">
+                <label for="firstName">FIRST NAME</label>
+                <input id="firstName" name="firstName" type="text" required />
+              </div>
+              <div class="controlDiv">
+                <label for="lastName">LAST NAME</label>
+                <input id="lastName" name="lastName" type="text" required />
+              </div>
+            </div>
+            <div class="seperatingDiv">
+              <div class="controlDiv">
+                <label for="emailAddress">EMAIL</label>
+                <input
+                  id="emailAddress"
+                  name="emailAddress"
+                  type="email"
+                  placeholder="example@domain.com"
+                  required
+                />
+              </div>
+              <div class="controlDiv">
+                <label for="phoneNumber">PHONE NUMBER</label>
+                <input
+                  id="phoneNumber"
+                  name="phoneNumber"
+                  type="text"
+                  placeholder="8761234567"
+                  minlength="10"
+                  maxlength="10"
+                  required
+                />
+              </div>
+            </div>
+            <div class="seperatingDiv">
+              <div class="controlDiv">
+                <label for="password">PASSWORD</label>
+                <input
+                  id="password"
+                  name="password"
+                  type="password"
+                  minlength="8"
+                  maxlength="8"
+                />
+              </div>
+              <div class="controlDiv">
+                <label for="passwordConfirmed">CONFIRM PASSWORD</label>
+                <input
+                  id="passwordConfirmed"
+                  name="passwordCofirmed"
+                  type="password"
+                  minlength="8"
+                  required
+                />
+              </div>
+            </div>
+            <div class="imageDiv">
+              <img src="Images/WorkOfArt.jpeg" id="squidword" />
+              <img src="Images/Frame.png" id="frame" />
+            </div>
+          </div>
+          <div class="submitDiv">
+            <button type="submit" id="submitButton">Create Account</button>
+            <span id="logIn"
+              >Already have an account? <a href="example.com">Log in</a></span
+            >
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
 </html>
