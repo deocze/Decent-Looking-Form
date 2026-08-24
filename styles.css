@@ -81,7 +81,13 @@ body {
   margin-bottom: 12px;
   font-size: 130%;
   border-style: solid;
+  border-radius: 10px;
 }
+.inputArea form input:focus{
+  box-shadow: 0px 0px 8px grey;  
+  border-color: red;
+}
+
 #password,
 #passwordConfirmed:valid {
   border-color: #43a870d2;
